@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class DemoApplicationTest {
     @Test
     public void sum(){
-        Assertions.assertEquals(2, 1+2);
+        Assertions.assertEquals(3, 1+2);
     }
 
 }
