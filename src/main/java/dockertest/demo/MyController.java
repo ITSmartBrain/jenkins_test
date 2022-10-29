@@ -16,7 +16,7 @@ public class MyController {
 //    FruitRepi fruitRepi;
     @GetMapping("/test")
     public String test(){
-        return  "hello world";
+        return  "hello world!!";
     }
 //
 //    @GetMapping("/create")
