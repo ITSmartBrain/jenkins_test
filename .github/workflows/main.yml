@@ -17,14 +17,14 @@ jobs:
         run: mvn --batch-mode --update-snapshots package
       - name: Build And Push
         uses: mr-smithers-excellent/docker-build-push@v5
-          name: Build & push Docker image
-          with:
-            image: inspire91/spring3
-            tags: latest
-            registry: registry.io
-            dockerfile: Dockerfile
-            username: ${{ secrets.DOCKER_USERNAME }}
-            password: ${{ secrets.DOCKER_PASSWORD }}
+      - name: Build & push Docker image
+        with:
+          image: inspire91/spring3
+          tags: latest
+          registry: registry.io
+          dockerfile: Dockerfile
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
 
 
 
