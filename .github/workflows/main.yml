@@ -1,4 +1,4 @@
-name: Java CI
+name: Java CI main
 
 on: [push]
 
@@ -40,5 +40,5 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ steps.meta.outputs.tags }}
+          tags: latest
           labels: ${{ steps.meta.outputs.labels }}
