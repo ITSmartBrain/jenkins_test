@@ -16,6 +16,7 @@ jobs:
       - name: Build with Maven
         run: mvn --batch-mode --update-snapshots package
   push_to_registry:
+    needs: build
     name: Push Docker image to Docker Hub
     runs-on: ubuntu-latest
     steps:
